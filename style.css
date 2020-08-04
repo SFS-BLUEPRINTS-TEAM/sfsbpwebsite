@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    background-color: #242424;
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
+    scroll-behavior: smooth;
+}
+body {
+    transition: all 1s ease;
+    padding: 0;
+    margin: 0;
+}
+p, h1 {
+    transition: all .4s ease;
+}
+
+.bg {
+    background-image: url("assets/banner/banner.png");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.vid {
+    width: inherit;
+    height: inherit;
+}
+.image-in-left{
+    float: left;
+    width: 50%;
+    display: inline;
+}
+.text-in-right{
+    float: right;
+    width: 50%;
+    display: inline;
+}
+.box{
+    width: inherit;
+    max-width: 100%;
+    height: auto;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: left;
+    overflow: auto;
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    display: block;
+}
+.box2{
+    width: inherit;
+    max-width: 100%;
+    height: auto;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: left;
+    overflow: auto;
+    position: relative;
+    display: block;
+}
+
+.responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+.navbar {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    float: left;
+    transition: all .4s ease;
+    z-index:1;
+}
+.box2 iframe {
+    width: 90%;
+    height: 50%;
+    float: center;
+    text-align: center;
+}
+.navbar a {
+    float: center;
+    display: inline;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    transition: all .4s ease;
+}
+
+.navbar a:hover{
+    color: #0088a9;
+    transition: all .4s ease;
+}
+
+.navbar button {
+    padding: 9px 25px;
+    background: #0088a9;
+    transition: all .4s ease;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+
+invitebtn {
+    padding: 9px 25px;
+    background: #0088a9;
+    transition: all .4s ease;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+invitebtn:hover{
+    color: #97F6FF;
+}
+
+invitebtn2 {
+    padding: 18px 50px;
+    background: #0088a9;
+    transition: all .4s ease;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+invitebtn2:hover{
+    background-color: #97F6FF;
+    color: black;
+}
+
+contactbutton {
+    padding: 9px 25px;
+    background: #0088a9;
+    transition: all .4s ease;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+contactbutton:hover{
+    background-color: green;
+    color: white;
+}
+
+footerbox {
+    background-color: #141414;
+    color: #FFFFFF;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar button:hover {
+    color: #97F6FF;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+imgcontainer {
+    position: relative;
+    display: inline;
+}
+
+.ctcbox {
+    width: inherit;
+    max-width: 100%;
+    height: auto;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: left;
+    overflow: auto;
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    display: block;
+}
+.ctcbox h1{
+    font-size: 15pt;
+}
+.box2 img {
+    float: center;
+    text-align: center;
+}
+@media screen and (max-width: 1000px) {
+    .box {
+        width: inherit;
+        max-width: 100%;
+        height: auto;
+        padding: 20px;
+        text-align: left;
+        overflow: auto;
+        position: absolute;
+        left: 5%;
+        right: 5%;
+        background: #242424;
+    }
+}
+@media screen and (max-width: 800px) {
+    .navbar a{
+        display: block;
+        float: none;
+        transition: all .4s ease;
+    }
+    .box2 iframe {
+        width: 100%;
+    }
+    a {
+        float: center;
+    }
+    .container {
+        position: relative;
+        top: 60%;
+    }
+    .navbar {
+        position: relative;
+    }
+    invitebtn2 {
+        display: inline-block;
+    }
+    .box {
+        width: 80%;
+        max-width: 100%;
+        height: auto;
+        padding: 20px;
+        text-align: left;
+        overflow: auto;
+        position: relative;
+        left: 5%;
+        right: 5%;
+        background: #242424;
+    }
+    .ctcbox {
+        width: inherit;
+        max-width: 100%;
+        height: auto;
+        padding: 20px;
+        text-align: left;
+        overflow: auto;
+        position: absolute;
+        left: 5%;
+        right: 5%;
+        background: #242424;
+    }
+    .ctcbox h1 {
+        font-size: 12pt;
+    }
+    .ctcbox h1, p{
+        text-align: left;
+    }
+    h1 {
+        top:50%;
+    }
+    .box2 .image-in-left {
+        margin: 0 auto;
+        float: none;
+        text-align: center;
+    }
+    .box2 .text-in-right {
+        margin: 0 auto;
+        float: none;
+        text-align: center;
+    }
+    .box2 img {
+        width: 100%;
+        object-fit: contain;
+    }
+    .box2 p, h1, b {
+        text-align: center;
+    }
+    .container p, img, invitebtn2 {
+        float: center;
+        text-align: center;
+    }
+    .container invitebtn2 {
+        margin: 5px;
+    }
+}
