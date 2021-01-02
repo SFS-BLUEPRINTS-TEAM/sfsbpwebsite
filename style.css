@@ -62,7 +62,7 @@ p, h1 {
 }
 
 .responsive {
-    width: 120px;
+    max-width: 100%;
     height: auto;
 }
 
